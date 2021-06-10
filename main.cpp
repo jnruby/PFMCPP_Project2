@@ -77,8 +77,10 @@ void variableDeclarations()
     double halfTime = .5;
 
     
+    /*
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-    ignoreUnused(count, dots, cities, alpha, grade, rating, lieDetectorTest, containsLead, underground, firstNum, anotherNum, difference, smallNum, timeRemain, halfTime);
+    */
+    ignoreUnused(number, count, dots, cities, alpha, grade, rating, lieDetectorTest, containsLead, underground, firstNum, anotherNum, difference, smallNum, timeRemain, halfTime);
 }
 
 /*
@@ -107,7 +109,6 @@ bool soundPlaying(double volume, int onSwitch=0)
 void getWeather(double temp, bool detectRain, char climateZone)
 {
     ignoreUnused(temp, detectRain, climateZone);
-
 }
 /*
  3)
@@ -115,7 +116,6 @@ void getWeather(double temp, bool detectRain, char climateZone)
 void keyboardType(int keys = 88, bool electric = true)
 {
     ignoreUnused(keys, electric);
-
 }
 /*
  4)
@@ -153,7 +153,6 @@ double voltageDrop(double current, double resistanceA, double resistanceB, doubl
 {
     ignoreUnused(current, resistanceA, resistanceB,powerFactor);
     return {};
-
 }
 /*
  8)
@@ -173,9 +172,7 @@ bool butterSpoiled(float fridgeTemp = 35, int butterAge = 15, bool salted = fals
 {
     ignoreUnused(fridgeTemp, butterAge, salted);
     return {};
-
 }
-
 
 /*
  10)
@@ -183,7 +180,6 @@ bool butterSpoiled(float fridgeTemp = 35, int butterAge = 15, bool salted = fals
 void make3D (double length, double width, double height, int textureType)
 {
     ignoreUnused(length, width, height, textureType);
-
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -208,41 +204,32 @@ int main()
     auto soundPlay = soundPlaying(.96);
 
     //2)
-
     getWeather(85, true, 'B');
 
     //3)
-
     keyboardType();
     
     //4)
-    
     auto age = ageFinder(40, 1982);
+ 
     //5)
-
     auto score = restaurantRating('A', 'B', 'D');
-
     
     //6)
-
     radarDectector(66, 65, 3, false);
     
     //7)
-
     auto drop = voltageDrop(.01, 3, 1, 9);
+
     //8)
-    
     auto cat = catDetector(false);
 
     //9)
-
-   auto butterState = butterSpoiled();
+    auto butterState = butterSpoiled();
     
     //10)
-    
     make3D(23.526, 23.0002, 5.5, 6);
 
-    
     ignoreUnused(carRented, soundPlay, age, score, drop, cat, butterState);
     std::cout << "good to go!" << std::endl;
     return 0;    
