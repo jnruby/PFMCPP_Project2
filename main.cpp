@@ -205,27 +205,45 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto soundPlay = soundPlaying(.96);
+
     //2)
-    
+
+   getWeather(85, true, 'B');
+
     //3)
+
+  keyboardType();
     
     //4)
     
+    auto age = ageFinder(40, 1982);
     //5)
+
+    auto score = restaurantRating('A', 'B', 'D');
+
     
     //6)
+
+    radarDectector(66, 65, 3, false);
     
     //7)
-    
+
+    auto drop = voltageDrop(.01, 3, 1, 9);
     //8)
     
+    auto cat = catDetector(false);
+
     //9)
+
+   auto butterState = butterSpoiled();
     
     //10)
     
+    make3D(23.526, 23.0002, 5.5, 6);
+
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, soundPlay, age, score, drop, cat, butterState);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
