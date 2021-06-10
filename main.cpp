@@ -209,11 +209,11 @@ int main()
 
     //2)
 
-   getWeather(85, true, 'B');
+    getWeather(85, true, 'B');
 
     //3)
 
-  keyboardType();
+    keyboardType();
     
     //4)
     
